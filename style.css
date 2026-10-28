@@ -1,0 +1,187 @@
+
+/* Pengaturan umum */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8faff;
+    color: #26344a;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+.navbar-brand {
+    color: #3459a8;
+}
+
+.nav-link:hover {
+    color: #5278d4;
+}
+
+/* Beranda */
+.hero {
+    background: linear-gradient(135deg, #e4efff, #ffe8f1);
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: bold;
+}
+
+.hero h1 span {
+    color: #5278d4;
+}
+
+.hero p {
+    line-height: 1.8;
+}
+
+.profile-photo {
+    width: 300px;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+/* Judul bagian */
+.heading h2 {
+    font-weight: bold;
+    color: #3459a8;
+}
+
+.heading p {
+    color: #69758a;
+}
+
+/* Tentang Saya */
+.about-card {
+    max-width: 600px;
+    border-radius: 15px;
+    background: white;
+}
+
+.about-card p {
+    border-bottom: 1px solid #edf0f7;
+    padding-bottom: 10px;
+}
+
+/* Proyek */
+.projects {
+    background: #f0f5ff;
+}
+
+.project-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+}
+
+.one {
+    background: linear-gradient(135deg, #7898e8, #b9caff);
+}
+
+.two {
+    background: linear-gradient(135deg, #e99cbd, #f8cddd);
+}
+
+.three {
+    background: linear-gradient(135deg, #6caecb, #b7e4f5);
+}
+
+.project-info h3 {
+    font-size: 20px;
+}
+
+.tags span {
+    display: inline-block;
+    background: #e8edff;
+    color: #3459a8;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Kontak */
+.contact-form {
+    max-width: 600px;
+    border-radius: 15px;
+}
+
+.form-control {
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: #7898e8;
+    box-shadow: 0 0 0 0.2rem #7898e833;
+}
+
+/* Tombol */
+.btn-primary {
+    background: #5278d4;
+    border-color: #5278d4;
+}
+
+.btn-primary:hover {
+    background: #3459a8;
+    border-color: #3459a8;
+}
+
+/* Pop-up Bootstrap */
+.modal-content {
+    border: none;
+    border-radius: 15px;
+}
+
+.modal-header {
+    background: #eaf0ff;
+}
+
+.modal-title {
+    color: #3459a8;
+}
+
+/* Footer */
+.footer {
+    background: #263e70;
+    color: white;
+}
+
+/* Tampilan HP */
+@media (max-width: 576px) {
+    .hero {
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 220px;
+    }
+
+    .project-image {
+        height: 120px;
+    }
+}
